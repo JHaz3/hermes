@@ -1,22 +1,17 @@
 import XCTest
 
 class GithubGraphQLUITests: XCTestCase {
+  func testInitialRepositoriesAreDisplayedForGraphqlWord() {
+    RepositoryListRobot()
+      .launch()
+      .checkSearchText("graphql")
+      .checkRepositoryRowsAreDisplayed()
+  }
 
-    override func setUp() {
-        super.setUp()
-      
-        continueAfterFailure = false
-        XCUIApplication().launch()
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
+  func testDisclaimerScreenIsDisplayedWhenSearchTextIsEmpty() {
+    RepositoryListRobot()
+      .launch()
+      .searchRepository("")
+      .checkDisclaimerViewExists()
+  }
 }

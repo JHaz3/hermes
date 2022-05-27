@@ -1,7 +1,16 @@
 @testable import GithubGraphQL
 import XCTest
+import Combine
 
-class GithubGraphQLTests: XCTestCase {
+class GithubGraphQLTests: XCTestCase, ViewModelDelegate {
+    func listLoadedSuccessfully() {
+        print("Test")
+    }
+    
+    func encountered(_ error: Error) {
+        print("Test")
+    }
+    
 
     override func setUp() {
         super.setUp()
@@ -18,9 +27,14 @@ class GithubGraphQLTests: XCTestCase {
         pageInfo: .init(startCursor: "startCursor", endCursor: nil, hasNextPage: false, hasPreviousPage: false),
         edges: makeEdges(count: 3)
       ))
-      let viewModel = ViewModel(client: MockGraphQLClient<SearchRepositoriesQuery>(response: mockedResponse))
+      let viewModel = ViewModel(client: MockGraphQLClient<SearchRepositoriesQuery>(response: mockedResponse), delegate: self)
 
       /* add assertions to validate view model state after making requests */
+        viewModel.list.removeAll()
+        
+        XCTAssertTrue(viewModel.list.isEmpty)
+        viewModel.search(phrase: <#T##String#>)
+        viewModel.search(phrase: mockedResponse)
     }
 
     func testPerformanceExample() {
@@ -28,6 +42,14 @@ class GithubGraphQLTests: XCTestCase {
         self.measure {
             // Put the code you want to measure the time of here.
         }
+
     }
 
+  private func createMockResponseViewModel(count: UInt) -> RepositoryListViewModel {
+    let mockedResponse = SearchRepositoriesQuery.Data(search: .init(
+      pageInfo: .init(startCursor: "startCursor", endCursor: nil, hasNextPage: false, hasPreviousPage: false),
+      edges: makeEdges(count: count)
+    ))
+    return RepositoryListViewModel(client: MockGraphQLClient<SearchRepositoriesQuery>(response: mockedResponse))    
+  }
 }
