@@ -1,7 +1,15 @@
 @testable import GithubGraphQL
 import XCTest
 
-class GithubGraphQLTests: XCTestCase {
+class GithubGraphQLTests: XCTestCase, ViewModelDelegate {
+    func listLoadedSuccessfully() {
+        print("Test")
+    }
+    
+    func encountered(_ error: Error) {
+        print("Test")
+    }
+    
 
     override func setUp() {
         super.setUp()
@@ -18,9 +26,14 @@ class GithubGraphQLTests: XCTestCase {
         pageInfo: .init(startCursor: "startCursor", endCursor: nil, hasNextPage: false, hasPreviousPage: false),
         edges: makeEdges(count: 3)
       ))
-      let viewModel = ViewModel(client: MockGraphQLClient<SearchRepositoriesQuery>(response: mockedResponse))
+      let viewModel = ViewModel(client: MockGraphQLClient<SearchRepositoriesQuery>(response: mockedResponse), delegate: self)
 
       /* add assertions to validate view model state after making requests */
+        viewModel.list.removeAll()
+        
+        XCTAssertTrue(viewModel.list.isEmpty)
+        viewModel.search(phrase: <#T##String#>)
+        viewModel.search(phrase: mockedResponse)
     }
 
     func testPerformanceExample() {

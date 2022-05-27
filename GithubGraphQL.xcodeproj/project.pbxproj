@@ -26,6 +26,9 @@
 		D9A10FEB216C77CD007998EC /* Queries.graphql in Resources */ = {isa = PBXBuildFile; fileRef = D9A10FE5216C77CD007998EC /* Queries.graphql */; };
 		D9C8E126216DB958002A64FC /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = D9C8E125216DB958002A64FC /* schema.json */; };
 		D9C8E128216DBA11002A64FC /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C8E127216DBA11002A64FC /* API.swift */; };
+		EB97652228355B2600380BE9 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB97652128355B2600380BE9 /* AsyncImageView.swift */; };
+		EB97652628356D8C00380BE9 /* GitRepoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB97652528356D8C00380BE9 /* GitRepoCollectionViewCell.swift */; };
+		EBAAF131284071B00044B6BE /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAAF130284071B00044B6BE /* AsyncImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,9 @@
 		D9A10FE5216C77CD007998EC /* Queries.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Queries.graphql; sourceTree = "<group>"; };
 		D9C8E125216DB958002A64FC /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
 		D9C8E127216DBA11002A64FC /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		EB97652128355B2600380BE9 /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
+		EB97652528356D8C00380BE9 /* GitRepoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitRepoCollectionViewCell.swift; sourceTree = "<group>"; };
+		EBAAF130284071B00044B6BE /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,7 @@
 			children = (
 				D8F7605427C737E400B1AB58 /* GraphQLClient+Mock.swift */,
 				D84E7B1027C81B88000DEB5B /* MockData.swift */,
+				EB97652128355B2600380BE9 /* AsyncImageView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -131,13 +138,11 @@
 			isa = PBXGroup;
 			children = (
 				D9A10FCE216C4E71007998EC /* Networking */,
+				EB97652328356D4D00380BE9 /* Views */,
 				D9A10F9F216C4AFD007998EC /* AppDelegate.swift */,
 				D9A10FA6216C4AFD007998EC /* Assets.xcassets */,
 				D9A10FAB216C4AFD007998EC /* Info.plist */,
 				D9A10FA8216C4AFD007998EC /* LaunchScreen.storyboard */,
-				D9A10FA3216C4AFD007998EC /* Main.storyboard */,
-				D9A10FA1216C4AFD007998EC /* ViewController.swift */,
-				D8F7605227C72F1400B1AB58 /* ViewModel.swift */,
 			);
 			path = GithubGraphQL;
 			sourceTree = "<group>";
@@ -168,6 +173,7 @@
 				D9A10FE2216C77CD007998EC /* GraphQLClient.swift */,
 				D8F7604C27C7295500B1AB58 /* GraphQLClient+Search.swift */,
 				D9A10FE1216C77CD007998EC /* Schema */,
+				EBAAF130284071B00044B6BE /* AsyncImageView.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -181,6 +187,25 @@
 				D9C8E125216DB958002A64FC /* schema.json */,
 			);
 			path = Schema;
+			sourceTree = "<group>";
+		};
+		EB97652328356D4D00380BE9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EB97652428356D6B00380BE9 /* Cells */,
+				D9A10FA1216C4AFD007998EC /* ViewController.swift */,
+				D8F7605227C72F1400B1AB58 /* ViewModel.swift */,
+				D9A10FA3216C4AFD007998EC /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EB97652428356D6B00380BE9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EB97652528356D8C00380BE9 /* GitRepoCollectionViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,7 +371,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8F7604D27C7295500B1AB58 /* GraphQLClient+Search.swift in Sources */,
+				EB97652628356D8C00380BE9 /* GitRepoCollectionViewCell.swift in Sources */,
 				D9A10FA2216C4AFD007998EC /* ViewController.swift in Sources */,
+				EBAAF131284071B00044B6BE /* AsyncImageView.swift in Sources */,
 				D9A10FE8216C77CD007998EC /* GraphQLClient.swift in Sources */,
 				D8F7605127C72B1700B1AB58 /* ApolloClient.swift in Sources */,
 				D9C8E128216DBA11002A64FC /* API.swift in Sources */,
@@ -363,6 +390,7 @@
 				D84E7B1127C81B88000DEB5B /* MockData.swift in Sources */,
 				D8F7605527C737E400B1AB58 /* GraphQLClient+Mock.swift in Sources */,
 				D9A10FB5216C4AFE007998EC /* GithubGraphQLTests.swift in Sources */,
+				EB97652228355B2600380BE9 /* AsyncImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,7 +560,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 7C8HG37K7Q;
 				INFOPLIST_FILE = GithubGraphQL/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -550,7 +578,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 7C8HG37K7Q;
 				INFOPLIST_FILE = GithubGraphQL/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -569,7 +597,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Y7BD5CL92Y;
+				DEVELOPMENT_TEAM = 7C8HG37K7Q;
 				INFOPLIST_FILE = GithubGraphQLTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -589,7 +617,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Y7BD5CL92Y;
+				DEVELOPMENT_TEAM = 7C8HG37K7Q;
 				INFOPLIST_FILE = GithubGraphQLTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -608,7 +636,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Y7BD5CL92Y;
+				DEVELOPMENT_TEAM = 7C8HG37K7Q;
 				INFOPLIST_FILE = GithubGraphQLUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -627,7 +655,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Y7BD5CL92Y;
+				DEVELOPMENT_TEAM = 7C8HG37K7Q;
 				INFOPLIST_FILE = GithubGraphQLUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
