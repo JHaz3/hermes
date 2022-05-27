@@ -1,0 +1,5 @@
+I decided to use a collectionView to display the list of repos as i believe it is more modern and clean way to display a list of pictures and minor details
+about the repos. I decided to use a protocol and delegate to comunicate between the viewModel and the ViewController.
+If I had enough time I would have like to get paginiation working I was having a ytough time figuring out how the implementation works with cursors, the
+graphQL enpoints I have used thusfar have all had a page property tied to them so this was a unique challenge that i ran into!
+I also didnt get to spend enough time figuring out the unit tests with the graphQL mock. This was a very interesting project and I learned quite a bit from the code.
