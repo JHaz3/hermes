@@ -7,16 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9604131C27CD49F900B3A781 /* RepositoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9604131B27CD49F900B3A781 /* RepositoryRow.swift */; };
+		9604131F27CD4A2500B3A781 /* UIHostingControllerWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9604131E27CD4A2500B3A781 /* UIHostingControllerWrapper.swift */; };
+		9604132127CD4A6B00B3A781 /* SwiftUIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9604132027CD4A6B00B3A781 /* SwiftUIImage.swift */; };
+		9604132627CD4ACD00B3A781 /* RepositoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9604132527CD4ACD00B3A781 /* RepositoryListView.swift */; };
+		9604132927CD4B1A00B3A781 /* RepositoryDetails+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9604132827CD4B1A00B3A781 /* RepositoryDetails+Identifiable.swift */; };
+		9604132B27CD4B7600B3A781 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9604132A27CD4B7600B3A781 /* String+Localized.swift */; };
+		9604133027CD540800B3A781 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 9604132F27CD540800B3A781 /* URLImage */; };
+		9604133227CD540800B3A781 /* URLImageStore in Frameworks */ = {isa = PBXBuildFile; productRef = 9604133127CD540800B3A781 /* URLImageStore */; };
+		9604133527CD54C400B3A781 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9604133427CD54C400B3A781 /* SearchBar.swift */; };
+		9604133727CD56D200B3A781 /* DisclaimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9604133627CD56D200B3A781 /* DisclaimerView.swift */; };
+		9604133927CD573D00B3A781 /* SwiftUIImageCacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9604133827CD573D00B3A781 /* SwiftUIImageCacheService.swift */; };
+		9604133C27CD6E9300B3A781 /* RepositoryListRobot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9604133B27CD6E9300B3A781 /* RepositoryListRobot.swift */; };
+		9604133E27CD6FA200B3A781 /* Robot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9604133D27CD6FA200B3A781 /* Robot.swift */; };
+		9604134027CD702500B3A781 /* RobotIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9604133F27CD702500B3A781 /* RobotIdentifier.swift */; };
+		9604134127CD704A00B3A781 /* RobotIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9604133F27CD702500B3A781 /* RobotIdentifier.swift */; };
+		9604134427CD72E300B3A781 /* XCUIElement+TypeText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9604134327CD72E300B3A781 /* XCUIElement+TypeText.swift */; };
 		D806B6B527C71F1C006F594D /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = D806B6B427C71F1C006F594D /* Apollo */; };
 		D806B6B727C71F1C006F594D /* ApolloSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = D806B6B627C71F1C006F594D /* ApolloSQLite */; };
 		D84E7B1127C81B88000DEB5B /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84E7B1027C81B88000DEB5B /* MockData.swift */; };
 		D8F7604B27C724F900B1AB58 /* API+Abstractions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F7604A27C724F900B1AB58 /* API+Abstractions.swift */; };
 		D8F7604D27C7295500B1AB58 /* GraphQLClient+Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F7604C27C7295500B1AB58 /* GraphQLClient+Search.swift */; };
 		D8F7605127C72B1700B1AB58 /* ApolloClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F7605027C72B1700B1AB58 /* ApolloClient.swift */; };
-		D8F7605327C72F1400B1AB58 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F7605227C72F1400B1AB58 /* ViewModel.swift */; };
+		D8F7605327C72F1400B1AB58 /* RepositoryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F7605227C72F1400B1AB58 /* RepositoryListViewModel.swift */; };
 		D8F7605527C737E400B1AB58 /* GraphQLClient+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F7605427C737E400B1AB58 /* GraphQLClient+Mock.swift */; };
 		D9A10FA0216C4AFD007998EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A10F9F216C4AFD007998EC /* AppDelegate.swift */; };
-		D9A10FA2216C4AFD007998EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A10FA1216C4AFD007998EC /* ViewController.swift */; };
+		D9A10FA2216C4AFD007998EC /* RepositoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A10FA1216C4AFD007998EC /* RepositoryListViewController.swift */; };
 		D9A10FA5216C4AFD007998EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9A10FA3216C4AFD007998EC /* Main.storyboard */; };
 		D9A10FA7216C4AFD007998EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9A10FA6216C4AFD007998EC /* Assets.xcassets */; };
 		D9A10FAA216C4AFD007998EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9A10FA8216C4AFD007998EC /* LaunchScreen.storyboard */; };
@@ -49,15 +65,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9604131B27CD49F900B3A781 /* RepositoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryRow.swift; sourceTree = "<group>"; };
+		9604131E27CD4A2500B3A781 /* UIHostingControllerWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHostingControllerWrapper.swift; sourceTree = "<group>"; };
+		9604132027CD4A6B00B3A781 /* SwiftUIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIImage.swift; sourceTree = "<group>"; };
+		9604132527CD4ACD00B3A781 /* RepositoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListView.swift; sourceTree = "<group>"; };
+		9604132827CD4B1A00B3A781 /* RepositoryDetails+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RepositoryDetails+Identifiable.swift"; sourceTree = "<group>"; };
+		9604132A27CD4B7600B3A781 /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
+		9604133427CD54C400B3A781 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		9604133627CD56D200B3A781 /* DisclaimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisclaimerView.swift; sourceTree = "<group>"; };
+		9604133827CD573D00B3A781 /* SwiftUIImageCacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIImageCacheService.swift; sourceTree = "<group>"; };
+		9604133B27CD6E9300B3A781 /* RepositoryListRobot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListRobot.swift; sourceTree = "<group>"; };
+		9604133D27CD6FA200B3A781 /* Robot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Robot.swift; sourceTree = "<group>"; };
+		9604133F27CD702500B3A781 /* RobotIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotIdentifier.swift; sourceTree = "<group>"; };
+		9604134327CD72E300B3A781 /* XCUIElement+TypeText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCUIElement+TypeText.swift"; sourceTree = "<group>"; };
+		9604134527CD76BC00B3A781 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D84E7B1027C81B88000DEB5B /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		D8F7604A27C724F900B1AB58 /* API+Abstractions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Abstractions.swift"; sourceTree = "<group>"; };
 		D8F7604C27C7295500B1AB58 /* GraphQLClient+Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GraphQLClient+Search.swift"; sourceTree = "<group>"; };
 		D8F7605027C72B1700B1AB58 /* ApolloClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloClient.swift; sourceTree = "<group>"; };
-		D8F7605227C72F1400B1AB58 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		D8F7605227C72F1400B1AB58 /* RepositoryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListViewModel.swift; sourceTree = "<group>"; };
 		D8F7605427C737E400B1AB58 /* GraphQLClient+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GraphQLClient+Mock.swift"; sourceTree = "<group>"; };
 		D9A10F9C216C4AFD007998EC /* GithubGraphQL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubGraphQL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9A10F9F216C4AFD007998EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D9A10FA1216C4AFD007998EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D9A10FA1216C4AFD007998EC /* RepositoryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListViewController.swift; sourceTree = "<group>"; };
 		D9A10FA4216C4AFD007998EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D9A10FA6216C4AFD007998EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9A10FA9216C4AFD007998EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -82,7 +112,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9604133227CD540800B3A781 /* URLImageStore in Frameworks */,
 				D806B6B527C71F1C006F594D /* Apollo in Frameworks */,
+				9604133027CD540800B3A781 /* URLImage in Frameworks */,
 				D806B6B727C71F1C006F594D /* ApolloSQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -104,6 +136,90 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9604131927CD49CC00B3A781 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				D9A10FA8216C4AFD007998EC /* LaunchScreen.storyboard */,
+				9604133327CD54BB00B3A781 /* Common */,
+				9604132D27CD4BA500B3A781 /* Main */,
+				9604131A27CD49E300B3A781 /* RepositoryList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		9604131A27CD49E300B3A781 /* RepositoryList */ = {
+			isa = PBXGroup;
+			children = (
+				9604132727CD4AD700B3A781 /* UIComponents */,
+				D8F7605227C72F1400B1AB58 /* RepositoryListViewModel.swift */,
+				9604132527CD4ACD00B3A781 /* RepositoryListView.swift */,
+				D9A10FA1216C4AFD007998EC /* RepositoryListViewController.swift */,
+			);
+			path = RepositoryList;
+			sourceTree = "<group>";
+		};
+		9604131D27CD4A1300B3A781 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9604131E27CD4A2500B3A781 /* UIHostingControllerWrapper.swift */,
+				9604132027CD4A6B00B3A781 /* SwiftUIImage.swift */,
+				9604133827CD573D00B3A781 /* SwiftUIImageCacheService.swift */,
+				9604133F27CD702500B3A781 /* RobotIdentifier.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		9604132227CD4A9000B3A781 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9604132827CD4B1A00B3A781 /* RepositoryDetails+Identifiable.swift */,
+				9604132A27CD4B7600B3A781 /* String+Localized.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9604132727CD4AD700B3A781 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				9604131B27CD49F900B3A781 /* RepositoryRow.swift */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		9604132D27CD4BA500B3A781 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D9A10FA3216C4AFD007998EC /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		9604133327CD54BB00B3A781 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9604133627CD56D200B3A781 /* DisclaimerView.swift */,
+				9604133427CD54C400B3A781 /* SearchBar.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		9604133A27CD6E8400B3A781 /* Robots */ = {
+			isa = PBXGroup;
+			children = (
+				9604133B27CD6E9300B3A781 /* RepositoryListRobot.swift */,
+				9604133D27CD6FA200B3A781 /* Robot.swift */,
+			);
+			path = Robots;
+			sourceTree = "<group>";
+		};
+		9604134227CD72D400B3A781 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9604134327CD72E300B3A781 /* XCUIElement+TypeText.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		D84E7B0F27C81B69000DEB5B /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +253,9 @@
 		D9A10F9E216C4AFD007998EC /* GithubGraphQL */ = {
 			isa = PBXGroup;
 			children = (
+				9604132227CD4A9000B3A781 /* Extensions */,
+				9604131D27CD4A1300B3A781 /* Utils */,
+				9604131927CD49CC00B3A781 /* Scenes */,
 				D9A10FCE216C4E71007998EC /* Networking */,
 				EB97652328356D4D00380BE9 /* Views */,
 				D9A10F9F216C4AFD007998EC /* AppDelegate.swift */,
@@ -160,6 +279,8 @@
 		D9A10FBE216C4AFE007998EC /* GithubGraphQLUITests */ = {
 			isa = PBXGroup;
 			children = (
+				9604134227CD72D400B3A781 /* Extensions */,
+				9604133A27CD6E8400B3A781 /* Robots */,
 				D9A10FBF216C4AFE007998EC /* GithubGraphQLUITests.swift */,
 				D9A10FC1216C4AFE007998EC /* Info.plist */,
 			);
@@ -228,6 +349,8 @@
 			packageProductDependencies = (
 				D806B6B427C71F1C006F594D /* Apollo */,
 				D806B6B627C71F1C006F594D /* ApolloSQLite */,
+				9604132F27CD540800B3A781 /* URLImage */,
+				9604133127CD540800B3A781 /* URLImageStore */,
 			);
 			productName = GithubGraphQL;
 			productReference = D9A10F9C216C4AFD007998EC /* GithubGraphQL.app */;
@@ -303,6 +426,7 @@
 			mainGroup = D9A10F93216C4AFD007998EC;
 			packageReferences = (
 				D806B6B327C71F1C006F594D /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				9604132E27CD540800B3A781 /* XCRemoteSwiftPackageReference "url-image" */,
 			);
 			productRefGroup = D9A10F9D216C4AFD007998EC /* Products */;
 			projectDirPath = "";
@@ -370,16 +494,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9604131C27CD49F900B3A781 /* RepositoryRow.swift in Sources */,
+				9604134027CD702500B3A781 /* RobotIdentifier.swift in Sources */,
+				9604133727CD56D200B3A781 /* DisclaimerView.swift in Sources */,
 				D8F7604D27C7295500B1AB58 /* GraphQLClient+Search.swift in Sources */,
 				EB97652628356D8C00380BE9 /* GitRepoCollectionViewCell.swift in Sources */,
 				D9A10FA2216C4AFD007998EC /* ViewController.swift in Sources */,
 				EBAAF131284071B00044B6BE /* AsyncImageView.swift in Sources */,
 				D9A10FE8216C77CD007998EC /* GraphQLClient.swift in Sources */,
+				9604133927CD573D00B3A781 /* SwiftUIImageCacheService.swift in Sources */,
+				9604132B27CD4B7600B3A781 /* String+Localized.swift in Sources */,
+				9604132127CD4A6B00B3A781 /* SwiftUIImage.swift in Sources */,
+				9604131F27CD4A2500B3A781 /* UIHostingControllerWrapper.swift in Sources */,
+				9604132627CD4ACD00B3A781 /* RepositoryListView.swift in Sources */,
 				D8F7605127C72B1700B1AB58 /* ApolloClient.swift in Sources */,
 				D9C8E128216DBA11002A64FC /* API.swift in Sources */,
 				D8F7604B27C724F900B1AB58 /* API+Abstractions.swift in Sources */,
-				D8F7605327C72F1400B1AB58 /* ViewModel.swift in Sources */,
+				D8F7605327C72F1400B1AB58 /* RepositoryListViewModel.swift in Sources */,
 				D9A10FA0216C4AFD007998EC /* AppDelegate.swift in Sources */,
+				9604132927CD4B1A00B3A781 /* RepositoryDetails+Identifiable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +532,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9A10FC0216C4AFE007998EC /* GithubGraphQLUITests.swift in Sources */,
+				9604134127CD704A00B3A781 /* RobotIdentifier.swift in Sources */,
+				9604134427CD72E300B3A781 /* XCUIElement+TypeText.swift in Sources */,
+				9604133E27CD6FA200B3A781 /* Robot.swift in Sources */,
+				9604133C27CD6E9300B3A781 /* RepositoryListRobot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -711,6 +848,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		9604132E27CD540800B3A781 /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 3.1.0;
+			};
+		};
 		D806B6B327C71F1C006F594D /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apollographql/apollo-ios";
@@ -722,6 +867,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		9604132F27CD540800B3A781 /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9604132E27CD540800B3A781 /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+		9604133127CD540800B3A781 /* URLImageStore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9604132E27CD540800B3A781 /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImageStore;
+		};
 		D806B6B427C71F1C006F594D /* Apollo */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = D806B6B327C71F1C006F594D /* XCRemoteSwiftPackageReference "apollo-ios" */;

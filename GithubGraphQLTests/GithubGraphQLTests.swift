@@ -1,5 +1,6 @@
 @testable import GithubGraphQL
 import XCTest
+import Combine
 
 class GithubGraphQLTests: XCTestCase, ViewModelDelegate {
     func listLoadedSuccessfully() {
@@ -41,6 +42,14 @@ class GithubGraphQLTests: XCTestCase, ViewModelDelegate {
         self.measure {
             // Put the code you want to measure the time of here.
         }
+
     }
 
+  private func createMockResponseViewModel(count: UInt) -> RepositoryListViewModel {
+    let mockedResponse = SearchRepositoriesQuery.Data(search: .init(
+      pageInfo: .init(startCursor: "startCursor", endCursor: nil, hasNextPage: false, hasPreviousPage: false),
+      edges: makeEdges(count: count)
+    ))
+    return RepositoryListViewModel(client: MockGraphQLClient<SearchRepositoriesQuery>(response: mockedResponse))    
+  }
 }
